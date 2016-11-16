@@ -5,6 +5,10 @@
 ####2.1下载软件包，解压目录，进入解压目录，使用make命令
 ```
 make
+#测试是否make成功
+make test 
+#安装到 /usr/local/redis 目录下
+make PREFIX=/usr/local/redis install
 ```
 ####3、配置说明
 > * daemonize 如果需要在后台运行将值设置为yes
@@ -18,7 +22,6 @@ make
 > * databases 设置数据库个数默认使用数据库为16
 > * save 设置redis进行数据库镜像的频率
 > * dbfilename 数据库文件名称
-> * daemonize 是否后台服务启动，值为yes和no
 > * requirepass 设置redis密码
 > * 
 
